@@ -1,1 +1,1 @@
-# pagination-component
+# embedded-javascript-templating
