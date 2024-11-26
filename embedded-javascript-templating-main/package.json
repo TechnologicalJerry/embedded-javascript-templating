@@ -1,0 +1,28 @@
+{
+  "name": "embedded-javascript-templating",
+  "version": "1.0.0",
+  "description": "The Embedded Javascript Templating",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/technologicaljerry/embedded-javascript-templating.git"
+  },
+  "keywords": [
+    "embedded-javascript-templating"
+  ],
+  "author": "technojerry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/technologicaljerry/embedded-javascript-templating/issues"
+  },
+  "homepage": "https://gitlab.com/technologicaljerry/embedded-javascript-templating#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
