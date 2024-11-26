@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic ID Cards</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="id-card-container">
+    <% users.forEach((user, index)=> { %>
+      <div class="id-card template-<%= (index % 5) + 1 %>">
+        <img src="<%= user.image %>" alt="User Image">
+        <h2>
+          <%= user.name %>
+        </h2>
+        <p>
+          <%= user.role %>
+        </p>
+        <div class="id-number">ID: <%= user.id %>
+        </div>
+      </div>
+      <% }); %>
+  </div>
+  <script>
+    const cards = document.querySelectorAll(".id-card");
+    let currentIndex = 0;
+
+    function switchCard() {
+      cards.forEach((card, index) => {
+        card.style.transform = index === currentIndex ? "rotateY(0deg)" : "rotateY(180deg)";
+      });
+      currentIndex = (currentIndex + 1) % cards.length;
+    }
+
+    setInterval(switchCard, 1500); // Change card every 3 seconds
+  </script>
+</body>
+
+</html>
