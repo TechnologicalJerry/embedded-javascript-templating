@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/technologicaljerry/embedded-javascript-templating.git"
+    "url": "git+https://github.com/TechnologicalJerry/embedded-javascript-templating.git"
   },
   "keywords": [
     "embedded-javascript-templating"
@@ -16,12 +16,13 @@
   "author": "technojerry",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/technologicaljerry/embedded-javascript-templating/issues"
+    "url": "https://github.com/TechnologicalJerry/embedded-javascript-templating/issues"
   },
-  "homepage": "https://gitlab.com/technologicaljerry/embedded-javascript-templating#readme",
+  "homepage": "https://github.com/TechnologicalJerry/embedded-javascript-templating#readme",
   "dependencies": {
     "body-parser": "^1.20.3",
     "ejs": "^3.1.10",
+    "embedded-javascript-templating": "file:",
     "express": "^4.21.1",
     "nodemon": "^3.1.7"
   }
